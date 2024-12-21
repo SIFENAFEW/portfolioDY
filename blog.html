@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <title>Sifen's Blogs</title>
+    <link rel="stylesheet" href="blog.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body >
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+                <span>Sifen</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="index.html">Home</a></div>
+                <div class="link contact-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><a href="contactUs.html">Contact Us</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <!-- <a href="">Skills</a>
+                <a href="">Services</a> -->
+                <a href="blog.html">Blogs</a>
+                <a href="contactUs.html">Contact Us</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div class="main-container">
+            <div class="content">
+                <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">My Blogs</h1>
+                <p data-aos="fade-right" data-aos-duration="1000" data-aos-delay="900">
+                    Explore my thoughts, projects, and experiences. Here, I share insights about coding, video editing, and graphic design.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="blog-section">
+        <div class="blog-container">
+            <div class="blog-card" data-aos="fade-up" data-aos-duration="1000">
+                <h3>How I Built This Portfolio</h3>
+                <p>Learn about the tools, challenges, and tips I used to create this responsive portfolio website.</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+            <div class="blog-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                <h3>Top 5 Video Editing Tools</h3>
+                <p>Discover the best software for video editing that can help you create professional-quality videos.</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+            <div class="blog-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                <h3>Graphic Design Tips for Beginners</h3>
+                <p>Get started with these essential graphic design tips to create stunning visuals.</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+        </div>
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({offset:0});
+    </script>
+    <script>
+        function hamburg(){
+                const navbar = document.querySelector(".dropdown")
+                navbar.style.transform = "translateY(0px)"
+            }
+            function cancel(){
+                const navbar = document.querySelector(".dropdown")
+                navbar.style.transform = "translateY(-500px)"
+            }
+    </script>
+</body>
+</html>
